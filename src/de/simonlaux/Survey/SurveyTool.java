@@ -1,4 +1,4 @@
-package de.simonlaux.Survey;
+package de.simonlaux.survey;
 
 import java.util.ArrayList;
 import java.util.List;

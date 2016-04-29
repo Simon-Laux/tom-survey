@@ -1,4 +1,4 @@
-package de.simonlaux.Survey;
+package de.simonlaux.survey;
 
 public class SurveyQuestion {
 	private String frage;
