@@ -1,6 +1,7 @@
 package de.simonlaux.survey;
 
 public class SurveyQuestion {
+	public static final String TYPE_STRING = "String";
 	private String frage;
 	private String id;
 	private String typ;
