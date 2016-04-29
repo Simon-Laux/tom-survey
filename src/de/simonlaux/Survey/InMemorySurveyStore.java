@@ -35,4 +35,9 @@ public class InMemorySurveyStore implements SurveyStore {
 			return surveydata;
 		}
 	}
+
+	@Override
+	public boolean close() {
+		return true;
+	}
 }

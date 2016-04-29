@@ -10,4 +10,6 @@ public interface SurveyStore {
 
 	public List<Survey> getAll(int limit);
 
+	boolean close();
+
 }

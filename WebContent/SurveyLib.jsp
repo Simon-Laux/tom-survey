@@ -9,8 +9,19 @@
 <script src="https://code.jquery.com/jquery-2.2.3.min.js"
 	integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo="
 	crossorigin="anonymous"></script>
-<script
-	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+	
+	<style>
+	.cap{
+	margin: 0px 10px -18px 10px;padding:0px;height:85%;position:absolute
+	}
+	.thum{
+	height: 198px;
+	}
+	.fgfd{
+	bottom:0px;position:absolute;
+	}
+	</style>
 
 <title>Survey's</title>
 </head>
@@ -52,11 +63,11 @@
 		<% for(int i=0;i<sugg.size();i++) { %>
 		
 			<div class="col-sm-6 col-md-4">
-				<div class="thumbnail">
-				<div class="caption">
+				<div class="thumbnail thum">
+				<div class="caption cap">
 						<h3><%=sugg.get(i).getName() %></h3>
-						<p><%=sugg.get(i).getDescription() %></h3></p><!-- TODO Maximal länge-->
-						<p>
+						<p><%=sugg.get(i).getShortDescription(145) %></h3></p><!-- TODO Maximal länge-->
+						<p class="fgfg">
 							<a href="?id=<%=i %>" class="btn btn-primary" role="button">Teilnehmen</a><!-- TODO guter identfier fehlt -->
 						</p>
 					</div>

@@ -35,4 +35,14 @@ public class Survey {
 		return description;
 	}
 
+	public String getShortDescription(int maxLenght) {
+		if (description.length() > maxLenght) {
+			return (description.substring(0, maxLenght) + "...");
+		} else if (description.length() < maxLenght) {
+			return description + "<br>";
+		} else {
+			return description;
+		}
+	}
+
 }
