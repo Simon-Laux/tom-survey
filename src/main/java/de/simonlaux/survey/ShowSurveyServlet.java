@@ -19,7 +19,17 @@ public class ShowSurveyServlet extends HttpServlet {
 	private SurveyStore store;
 
 	public void init(ServletConfig config) throws ServletException {
-		store = InMemorySurveyStore.getInstance();
+
+		try {
+			store = new MySqlSurveyStore("127.0.0.1", 3306, "guestbook", "guestbook", "123456");
+		} catch (StoreInitException e) {
+			System.out.println("Sorry, there is a Problem with MySQL:\n" + e.getMessage() + e.getCause()
+					+ "\nWe try to Fall back to your alternative");
+			System.out.println("Fallback to Chache-mode...");
+			store = InMemorySurveyStore.getInstance();
+		}
+		System.out.println("Guestbookservice gestartet");
+
 		System.out.println(store.add(new Survey("Test",
 				Arrays.asList(new SurveyQuestion("How old are you?", "age", SurveyQuestion.TYPE_STRING),
 						new SurveyQuestion("Seite2", "d", SurveyQuestion.TYPE_STRING),

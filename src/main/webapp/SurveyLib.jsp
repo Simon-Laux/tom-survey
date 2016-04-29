@@ -1,5 +1,5 @@
 <%@page import="java.util.List"%>
-<%@page import="de.simonlaux.Survey.Survey"%>
+<%@page import="de.simonlaux.survey.Survey"%>
 <html>
 <head>
 <link rel="stylesheet"
@@ -18,7 +18,7 @@
 	.thum{
 	height: 198px;
 	}
-	.fgfd{
+	.fghh{
 	bottom:0px;position:absolute;
 	}
 	</style>
@@ -67,7 +67,7 @@
 				<div class="caption cap">
 						<h3><%=sugg.get(i).getName() %></h3>
 						<p><%=sugg.get(i).getShortDescription(145) %></h3></p><!-- TODO Maximal länge-->
-						<p class="fgfg">
+						<p class="fghh">
 							<a href="?id=<%=i %>" class="btn btn-primary" role="button">Teilnehmen</a><!-- TODO guter identfier fehlt -->
 						</p>
 					</div>

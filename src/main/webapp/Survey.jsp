@@ -1,5 +1,5 @@
-<%@page import="de.simonlaux.Survey.SurveyQuestion"%>
-<%@page import="de.simonlaux.Survey.Survey"%>
+<%@page import="de.simonlaux.survey.SurveyQuestion"%>
+<%@page import="de.simonlaux.survey.Survey"%>
 <html>
 <head>
 <%

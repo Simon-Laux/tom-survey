@@ -2,6 +2,7 @@
     <wb-module deploy-name="Survey">
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/java"/>
         <wb-resource deploy-path="/" source-path="/src/main/webapp"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/test/java"/>
         <property name="context-root" value="Survey"/>
         <property name="java-output-path" value="/Survey/build/classes"/>
     </wb-module>

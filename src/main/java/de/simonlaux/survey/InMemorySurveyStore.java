@@ -11,7 +11,7 @@ public class InMemorySurveyStore implements SurveyStore {
 		return INSTANCE;
 	}
 
-	@Override
+	 @Override
 	public int add(Survey inhalt) {
 		surveydata.add(inhalt);
 		return (surveydata.size() - 1);
